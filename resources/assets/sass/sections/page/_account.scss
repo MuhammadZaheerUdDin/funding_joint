@@ -1,0 +1,26 @@
+.account{
+  .monies{
+    display: inline-block;
+    .icon{
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      img{
+        max-width: 100px;
+      }
+    }
+    .icon-right{
+      display: inline-block;
+      vertical-align: middle;
+      p{
+        margin: 0px;
+        font-size: 18px;
+        font-weight: 300;
+        &:first-child{
+          font-weight: bold;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}

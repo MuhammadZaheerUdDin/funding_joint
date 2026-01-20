@@ -1,0 +1,51 @@
+.buyers__sections {
+
+  .card-body {
+    cursor: pointer !important;
+  }
+
+
+  a.page-link{
+    padding: 0rem 0.75rem !important;
+    color:#007bff !important;
+  }
+
+
+}
+
+
+.buyer__info{
+
+  .buyer__details{
+    padding-top:30px !important;
+    padding-bottom:30px !important;
+  }
+
+  .buyer__address__details{
+    padding-top:30px !important;
+    padding-bottom:30px !important;
+  }
+
+
+  span.has-error{
+    color:red !important;
+    font-weight: bold !important;
+  }
+
+  .create_buyer{
+
+    span.has-error{
+      color:red !important;
+      font-weight: bold !important;
+    }
+
+
+  }
+}
+span.has-error{
+  color:red !important;
+  font-weight: bold !important;
+}
+
+
+.required:after { content:" *";  color: red; }

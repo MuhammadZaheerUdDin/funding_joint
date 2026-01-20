@@ -1,0 +1,22 @@
+Points done and updated on the server:
+--------------------------------------
+1. T&Cs don't open in new window.
+2. The error messages should update dynamically based on the parameters set by the admin in settings. Setting has been 30% but error shows static 25%.
+3. The error message is static, and not linked at all to the admin parametre settings, e.g. when changed to 10 days from 5 days, there was no error when entering a value above 5 and between 10.
+4. Seller - Clicking on My auctions gives error page.
+5. We deposited £2,000 into the seller's wallet, approved this by admin, and then the seller placed a bid for £2000 on auction 27. We then tried to edit bid, but it would not allow us to submit an edited bid as it displayed the above error message... perhaps this assumes that we are placing a new bid, and therefore is applying logic that we do not have sufficient funds in our wallet to place this bid (note the wallet balance is £0 as the initial £2,000 bid has been placed).
+6. "We edited a bid from £2,000 to £8,500. The wallet amount did not update to reflect the change in the wallet amount of £6,500. e.g. when we placed the first bid of £2,000 the wallet was reduced, however when we edited the bid to £8,500 (i.e. increasing the amount of money bid by £6,500, the wallet did not decrease by £6,500). Furthermore, a different bidder outbid part of our £8,500 bid, thus making £2,000 of our bid uncompetitive and knocked off from the leaderboard. This reduction (£2,000) of our acceptable bid amount for investor 23 was not added back to the investor's wallet. We also tried to access the URL to release unaccepted bid amounts: http://3.20.72.9/funding_joint/public/release-funds-unaccepted-bid
+however this was also not working"
+7. The above transaction of £6,500 did not reflect in transactions too.
+8. If auction closes with 0% ROI and full value, auction end notification is not coming.
+9. Admin dashboard: Users needing approval shows '3', but when you click on this it only shows 2 users.
+
+Points under QA and will release shortly:
+-----------------------------------------
+1. Not allowing seller to click the profile.
+2. When editing the bid, we have entered the bid amount and max ROI that was displayed in the dynamic message. This says that we have bid for 100.00% of the PO available, however the corresponding PO Value is £8,999.80 , which means there is still £0.20 of PO available in reality... This may be due to rounding errors.
+3. Please add an 'i' info text icon that can be hovered over. This should appear by the 'Share of Funding Target' column heading in the leaderboard. The message to be displayed is: "rounded to 2 decimal places)
+4. Please would you make sure all monetary amounts are displayed to 2 decimal places. In this case, the amount of PO for investor23 is showing as £9,000 instead of £8,999.80.
+5. Grey out 'Release' button until invoice is approved.
+6. Registered sellers' shows '7', but when you click on it shows the following, and I am not sure how a tally of 7 has been reached (even when accounting for 'declined' users), unless it has just removed the 'Pending' status users. Also, for one of the users (Ref 314) their status is 'Pending', however there are no action buttons for the admin to accept/decline/download/chat etc.
+7. When the admin entered the buyer repayment of £5000 (the whole PO amount, and not just £4,000 of the target funding amount), and I selected 'overdue' when entering this, then the following appears against the buyer... the buyer has paid £5,000 to FJ for the whole PO amount. FJ will then make the necessary disbursements to seller and investors. However, as can be seen in the screenshot, it doesn't seem to be accounting correctly for the £1,000 amount. This £1,000 needs to be paid back to the seller as it represents the seller's stake in the original PO.

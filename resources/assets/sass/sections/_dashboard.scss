@@ -1,0 +1,61 @@
+.progress-ring__circle {
+  transition: 0.35s stroke-dashoffset;
+  // axis compensation
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.dashboard{
+  &__card{
+    font-size: 12px;
+    border-top:4px solid $primary-color;
+    border-radius: 4px;
+    color: $black;
+    &:hover{
+      color: $black;
+    }
+    &__title{
+      padding-top: 5px;
+    }
+    &__content{
+      padding-top: 10px;
+      font-size:20px;
+      font-weight: 600;
+    }
+  }
+  h3 {
+    font-weight:400;
+    font-size:38px;
+    @media screen and (max-width: 600px) {
+      font-size:24px;
+      }
+  }
+  .roi-buttons {
+      @media screen and (max-width: 600px) {
+        position:relative;
+        //right:-25%;
+        margin-top:25px;
+        margin-bottom:25px;
+       }
+  }
+
+
+    .dashboard__card {
+      a{
+        text-decoration: none;
+        color: #000;
+      }
+      @media screen and (max-width: 600px) {
+        margin-bottom:25px;
+      }
+    }
+
+    .dashboard__card__title {
+      font-size:18px;
+    }
+    .dashboard__card__content {
+      font-size:28px;
+    }
+
+
+}

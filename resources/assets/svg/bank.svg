@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.133 30.227">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#fff;stroke-width:.2px}
+        </style>
+    </defs>
+    <g id="Group_1023" data-name="Group 1023" transform="translate(.109 .11)">
+        <path id="Path_307" d="M.649 10.817h29.666a.63.63 0 0 0 .285-1.193L15.818.149a.629.629 0 0 0-.678 0L.31 9.659a.629.629 0 0 0 .339 1.157zm14.83-9.392l12.688 8.137H2.792z" class="cls-1" data-name="Path 307" transform="translate(-.019 -.05)"/>
+        <path id="Path_308" d="M75.838 272.759a.629.629 0 1 0 0-1.259H50.529a.629.629 0 1 0 0 1.259h1.331v12.551h-1.331a.629.629 0 1 0 0 1.259h25.314a.629.629 0 1 0 0-1.259h-.916v-12.551zM57.4 285.31h-4.05v-12.551h4.05zm5.462 0h-3.841v-12.551h3.841zm5.4 0h-3.838v-12.551h3.841zm5.4 0h-3.835v-12.551h3.841z" class="cls-1" data-name="Path 308" transform="translate(-47.704 -259.554)"/>
+        <path id="Path_309" d="M30.881 632.429a.629.629 0 0 0-.629-.629H.629a.629.629 0 1 0 0 1.259h29.622a.629.629 0 0 0 .63-.63z" class="cls-1" data-name="Path 309" transform="translate(0 -603.042)"/>
+    </g>
+</svg>

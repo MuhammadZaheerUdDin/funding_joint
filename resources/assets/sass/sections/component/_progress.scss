@@ -1,0 +1,57 @@
+// progress bar
+.progress.custom{
+  position: relative;
+  color: white;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  overflow: visible;
+  height: 0.7rem;
+  background-color: #b1a4de;
+  &.full{
+    height: 1.2rem;
+    border-radius: 0.25rem 0.25rem;
+    .progress-bar{
+      border-radius: 0.25rem 0.25rem;
+      &>span{
+        top: -7px;
+        &>span{
+          font-size: 19px;
+          height: 34px;
+        }
+      }
+    }
+  }
+  .progress-bar{
+    background-color: $primary-color;
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+    position: relative;
+    &>span{
+      display: inline-block;
+      position: absolute;
+      //right: 0px;
+      top: -8px;
+      &>span{
+        display: inline;
+        position: absolute;
+        color: #373737;
+        padding: 3px 5px;
+        height: 25px;
+        vertical-align: middle;
+        background-color: white;
+        border: 1px solid #37373769;
+      }
+    }
+    %progressSmall {  left: -50%; right: auto;  }
+    %progressElse { right: -50%; left: auto; }
+    span>span{
+      left: auto;
+    }
+    @for $i from 0 through 100 {
+      &[progressbar="#{$i}"] {
+        span>span{
+          @if $i < 15 { @extend %progressSmall; }
+          @else { @extend %progressElse; }
+        }
+      }
+    }
+  }
+}

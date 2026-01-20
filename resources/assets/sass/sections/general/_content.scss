@@ -1,0 +1,23 @@
+.main-content{
+	padding-top: 15px;
+	padding-bottom: 15px;
+  max-width: 1140px;
+  min-height: 77.2vh;
+  margin: 20px 0px auto 30px;
+  hr:first-child{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+	h2{
+		font-size: 22px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+	&.admin{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@include media-breakpoint-down(sm) {
+		margin:0px auto;
+	}
+}

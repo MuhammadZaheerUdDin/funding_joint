@@ -1,0 +1,68 @@
+
+section.subscribe--newsletter{
+  background-image: linear-gradient(to right, #ed2d6d, #4a29b9);
+  padding-bottom: 7vh;
+  .subscribe--top--block{
+
+    .subscribe--title h3{
+      font-family: "din-2014";
+      margin-top:60px;
+      margin-bottom: 70px;
+      font-size: 35px;
+      font-style:normal;
+      font-stretch: normal;
+      line-height: 1.26;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  .subscribe--bottom--block{
+    .subscribe--content{
+
+      color:$white;
+
+      h5{
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom:27px;
+      }
+
+      p{
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #ffffff;
+      }
+
+      margin-bottom:60px;
+    }
+
+    button.btn-outline-info{
+      border:1px solid $white !important;
+      color:$white !important;
+      border-radius: 5px !important;
+      margin-right:0px;
+      padding:10px 48px;
+    }
+  }
+}
+
+.form-block {
+        @include media-breakpoint-down(xs) {
+          margin-bottom:40px;
+          display:block;
+      }
+    }

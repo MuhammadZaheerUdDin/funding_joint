@@ -1,0 +1,333 @@
+
+
+
+
+.seller-dashboard{
+	a{
+		color: #333;
+	}
+}
+.card.cb{
+	border-top: 5px solid #4a29b9 !important;
+	background-color: #f7f7f7;
+}
+
+.auction-form {
+	margin-bottom:100px;
+	@include media-breakpoint-down(sm) {
+		margin-top:10px;
+	}
+	.form-control{
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+}
+
+.step-menu {
+		text-align:center;
+		border-bottom: 1px solid #ccc;
+    @include media-breakpoint-down(sm) {
+	 	display:none;
+	 }
+	 div{
+		 margin:0px;
+		 div{
+			 padding: 0px;
+		 }
+	 }
+	 a{
+	 	color:#373737;
+		padding: 20px;
+		width: 100%;
+		display: inline-block;
+	 }
+	 .active-step {
+		a{
+			border-bottom: 5px solid $danger-color;
+			font-weight: bold;
+		}
+	 }
+}
+
+select.select-buyer {
+	height: calc(2.25rem + 10px);
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom:30px;
+
+	}
+}
+
+.add-a-buyer {
+
+	.auction-title {
+		margin-top:50px;
+		font-size: 16px;
+	  	font-weight: normal;
+	  	font-style: normal;
+	  	font-stretch: normal;
+	  	line-height: 1.25;
+	  	letter-spacing: 0.2px;
+	  	color: #373737;
+	  	margin-bottom:40px;
+	}
+
+	p{
+		margin-bottom:40px;
+	}
+
+}
+
+.create-button {
+	width:100%;
+	text-align:center;
+	//margin-top:-5px;
+	@include media-breakpoint-down(sm) {
+		margin-left:0px;
+	}
+}
+
+.buyer-detail {
+	margin-top:80px;
+	margin-bottom:60px;
+	@include media-breakpoint-down(sm) {
+		margin-top:30px;
+
+	}
+}
+
+
+
+.address-title {
+	font-weight:bold;
+	font-size: 16px;
+  	font-weight: bold;
+  	line-height: 1.25;
+  	letter-spacing: 0.2px;
+  	color: #373737;
+  	margin-top:30px;
+  	margin-bottom:30px;
+}
+
+.auction-title {
+	font-weight:bold;
+	font-size: 16px;
+  	font-weight: bold;
+  	line-height: 1.25;
+  	letter-spacing: 0.2px;
+  	color: #373737;
+  	margin-top:50px;
+  	margin-bottom:40px;
+
+}
+
+
+/*adjusted styles*/
+
+.reg-form {
+	margin-top:20px;
+}
+
+.reg-form  input[type=checkbox] {
+		height:15px;
+		position:relative;
+		left:-49%;
+		@include media-breakpoint-down(sm) {
+
+		}
+	}
+
+.log-in-options {
+	li {
+		display:inline-block;
+		list-style-type:none;
+
+	}
+}
+
+.custom-control-inline {
+	@include media-breakpoint-down(sm) {
+		margin-left:30px;
+		}
+
+}
+
+.registration-header li.nav-item.dropdown {
+	list-style-type:none;
+}
+
+.form-loggedin {
+	//margin-top:-570px;
+	@include media-breakpoint-down(sm) {
+		margin-top:10px;
+		}
+}
+
+.form-loggedin  input[type=checkbox] {
+		// height:15px;
+		position:relative;
+		// left:-49%;
+		@include media-breakpoint-down(sm) {
+			// height:15px;
+			position:static;
+		}
+	}
+
+.right-nav-list .btn {
+	margin-right:20px;
+
+	@include media-breakpoint-down(sm) {
+			margin-top:15px;
+			margin-right:0px;
+			margin-bottom:15px;
+		}
+}
+
+.right-nav-list .btn-group {
+	@include media-breakpoint-down(sm) {
+				// margin-left:-50px;
+			}
+
+}
+
+.logged-in-icons {
+	margin-left:100px;
+
+
+	.icon {
+	margin-right:30px;
+	}
+}
+
+.register-buyer {
+	background:#4a29b9;
+	border-radius:4px;
+	@include media-breakpoint-down(sm) {
+	width:100%;
+	margin-left:0px;
+	}
+
+
+}
+
+.register-next {
+	background:#4a29b9;
+	border-radius:4px;
+	margin-top:30px;
+	@include media-breakpoint-down(sm) {
+	width:100%;
+	margin-left:0px;
+
+	}
+}
+
+.custom-file {
+	margin-top:20px;
+	margin-bottom:20px;
+	display: inline-block;
+}
+.upload-document{
+	input{
+		    height: auto;
+	}
+	label{
+		margin-bottom: 0px;
+	}
+}
+.notice-row {
+	border-bottom:solid 1px #b8b8b8;
+	margin-top:20px;
+}
+
+.notice-value {
+	font-weight:bold;
+}
+
+.buyer-details {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.auction-details {
+	margin-top:30px;
+}
+
+.auction-row {
+	margin-bottom:30px;
+}
+
+.funding-row {
+	margin-top:30px;
+}
+
+/*log in form*/
+
+.reg-form-login {
+	margin-top:50px;
+
+}
+
+.upload-document{
+
+}
+
+/*confirmation notice*/
+
+.confirmation-notice {
+	margin-top:50px;
+}
+
+.log-in-form {
+	padding-top:100px;
+
+	h3 {
+		margin-bottom:30px;
+	}
+
+	.btn-purple {
+		width:100%;
+	}
+	span {
+		font-weight:bold;
+	}
+
+}
+
+.reset-password {
+	padding-top:50px;
+}
+
+.terms-form {
+	.row {
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+}
+
+/*investor profile form*/
+.investor-profile {
+
+	// margin-top:30px;
+	margin-bottom:100px;
+
+	@include media-breakpoint-down(sm) {
+	margin-top:0px;
+	}
+
+	h3 {
+		font-size: 16px;
+		font-weight:bold !important;
+		text-transform:uppercase;
+	}
+}
+
+/*register login*/
+
+.register-background {
+	background: url('/assets/img/city.jpg');
+	background-size: cover;
+	width:100%;
+	min-height:800px;
+	height: 100vh;
+	background-repeat:none;
+}

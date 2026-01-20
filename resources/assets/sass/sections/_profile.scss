@@ -1,0 +1,189 @@
+.profile {
+
+	.top-profile-bar {
+		background:#ccc;
+		margin-bottom:30px;
+	}
+
+	.profile-buttons {
+		margin-top:10px;
+	}
+	.profile-buttons .btn {
+		margin-right:10px;
+	}
+
+	.form-area {
+		i.zmdi{
+			display: none;
+		}
+
+	    padding-left: 60px;
+	    position: relative;
+			&:before {
+			    content: '';
+			    position: absolute;
+			    top: 0px;
+			    width: 1px;
+			    height: 100%;
+			    background: black;
+			    left: 20px;
+			}
+			.form-group{
+				position: relative;
+
+				&.confirm{
+					i.zmdi{
+						display: block;
+						width: 18px;
+						height: 18px;
+						border-radius: 50%;
+						position: absolute;
+						text-align: center;
+				    left: -50px;
+						top: 2px;
+					}
+					&:last-of-type{
+						i.zmdi {
+							display: block;
+								content: "";
+								width: 20px;
+								height: 20px;
+								border-radius: 50%;
+								position: absolute;
+								text-align: center;
+						    left: -50px;
+								bottom: 2px;
+						}
+					}
+				}
+
+				&:before {
+				    content: "";
+				    width: 20px;
+				    height: 20px;
+				    background: white;
+				    border: 1px solid black;
+				    border-radius: 50%;
+				    position: absolute;
+				    left: -50px;
+						top: 0px;
+				}
+				&:last-of-type{
+					&:after {
+							content: "";
+							width: 20px;
+							height: 20px;
+							background: white;
+							border: 1px solid black;
+							border-radius: 50%;
+							position: absolute;
+							left: -50px;
+							bottom: 0px;
+					}
+				}
+			}
+	}
+
+.checkbox-area{
+	position: relative;
+	padding-left: 30px;
+	input{
+		top: 5px;
+		left: 0px;
+		position: absolute;
+	}
+}
+
+	.profile__content__heading	{
+		text-transform:uppercase;
+	}
+
+	h3 {
+		margin-left:30px;
+		margin-top:10px;
+		font-weight:bold;
+
+		 @include media-breakpoint-down(sm) {
+		 	margin-left:0px;
+		 }
+	}
+
+	h5 {
+		font-weight:bold;
+		font-size:16px;
+	}
+
+	.profile__content{
+		p {
+			// margin-left:30px;
+			@include media-breakpoint-down(sm) {
+				margin-left:0px;
+			}
+		}
+		label{
+			margin-top: 10px;
+		}
+		.icon{
+			margin-right: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			min-width: 100px;
+			    width: calc(20% - 15px);
+		}
+		.icon-text{
+			margin-right: 15px;
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+	    width: calc(80% - 20px);
+			h4{
+				margin-bottom: 2px;
+				padding-bottom: 0px;
+			}
+			p{
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+			}
+		}
+	}
+
+	.edit-button a{
+		margin-top:30px;
+		padding:10px 50px 10px 50px;
+		border-radius:5px;
+		font-size:14px;
+	}
+	.row-spacer {
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+
+	.profile-label {
+		color:#8A8A8A;
+	}
+
+	.profile-value {
+		font-weight:bold;
+	}
+
+	.bank-details {
+		margin-bottom:30px;
+	}
+
+
+
+}
+
+.profile__admin__actions {
+	.btn{
+		min-width:135px;
+	}
+		select {
+			margin-top:10px;
+		}
+	}
+
+.declaration {
+	font-style:italic;
+
+}

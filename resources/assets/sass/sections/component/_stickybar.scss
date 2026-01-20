@@ -1,0 +1,13 @@
+.sticky-bar{
+  position: sticky;
+  bottom: 0px;
+  @include media-breakpoint-down(sm) {
+    //bottom: 95px;
+  }
+  &>div{
+    max-width: 1250px;
+    margin: 0 0 auto 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

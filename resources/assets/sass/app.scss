@@ -1,0 +1,71 @@
+//charset
+@charset "UTF-8";
+
+@import "../../../node_modules/flatpickr/dist/flatpickr.min.css";
+@import "../css/material-design-iconic-font.min.css";
+
+// Bootstrap
+@import "core/bootstrap/functions";
+@import "core/bootstrap/variables";
+@import '~bootstrap/scss/bootstrap';
+// CORE
+@import "core/mixins";
+// Your custom variables
+@import "custom-variables";
+@import "core/colors";
+@import "core/variables";
+@import "core/global";
+@import "core/helpers";
+@import "core/typography";
+@import "core/masks";
+@import "core/waves";
+
+// FREE
+@import "free/animations-basic";
+@import "free/animations-extended";
+@import "free/buttons";
+@import "free/cards";
+@import "free/dropdowns";
+@import "free/input-group";
+@import "free/navbars";
+@import "free/pagination";
+@import "free/badges";
+@import "free/modals";
+@import "free/carousels";
+@import "free/forms";
+@import "free/msc";
+@import "free/footers";
+@import "free/list-group";
+@import "free/tables";
+@import "free/switch";
+@import "free/depreciated";
+
+// Your custom styles
+@import "sections/general/content";
+@import "sections/general/footer";
+@import "sections/general/header";
+@import "sections/general/modal";
+@import "sections/general/sidebar";
+
+@import "sections/component/alert";
+@import "sections/component/cards";
+@import "sections/component/datepicker";
+@import "sections/component/nav";
+@import "sections/component/progress";
+@import "sections/component/radial-progress";
+@import "sections/component/stickybar";
+
+@import "sections/page/account";
+@import "sections/page/general";
+@import "sections/page/home";
+
+@import "sections/buyers_section";
+@import "sections/dashboard";
+@import "sections/marketplace";
+@import "sections/notifications";
+@import "sections/profile";
+@import "sections/registration-seller";
+@import "sections/subscribe-newsletter";
+
+@import "custom-styles";
+@import "./plugins/_medium-editor.scss";

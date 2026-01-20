@@ -1,0 +1,455 @@
+// Your custom styles
+.nav-tabs{
+  .nav-item{
+    a.nav-link{
+      color: $black;
+      padding: 0.5em;
+      &.active{
+        font-weight: 600;
+      }
+    }
+  }
+}
+.icon-width{
+  
+}
+
+a.close.float-right {
+    text-align: right;
+        padding: 10px 10px 0px 0px;
+    display: inline-block;
+font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+&:before{
+      content: '\f136';
+}
+span{
+  display: none;
+}
+}
+
+.logout {
+  background-color: #333333;
+  a.btn.small.float-right {
+    padding: 0px;
+    &:hover{
+      color: white;
+    }
+  }
+}
+
+main {
+  h3 {
+    font-size:35px;
+    margin-top:60px;
+    margin-bottom:40px;
+    font-weight:bold;
+  }
+.progress{
+  .progress-bar{
+    overflow: visible;
+    border-radius: 0.25rem;
+    span {
+      position: absolute;
+      right: -20px;
+      background: white;
+      color: black;
+      padding: 2px 8px;
+      border: 1px solid black;
+      z-index: 11;
+      font-size: 10px;
+      border-radius: 2px;
+    }
+  }
+}
+.right-background {
+    background:url('../assets/img/ipad.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    height:750px;
+    background-position: right;
+  }
+  .working-points {
+    margin-top:80px;
+     @include media-breakpoint-down(xs) {
+      margin-top:10px;
+     }
+    .bullet-number {
+      color:#ed2d6d;
+      font-size:24px;
+      font-weight:bold;
+      font-style: italic;
+    }
+    p {
+       font-size: 18px;
+       line-height: 1.22;
+    }
+    .bullet-row {
+      margin-bottom:40px;
+      max-width: 100%;
+      @include media-breakpoint-up(sm) {
+        min-width: 500px;
+      }
+      p{
+        padding-left: 60px;
+        position: relative;
+        img{
+          position: absolute;
+          left: 0px;
+          top: 3px;
+        }
+      }
+    }
+  }
+}
+
+
+body #app{
+  .md-form {
+    input{
+      -webkit-box-shadow: 0 1px 0 0 #fff;
+      box-shadow: 0 1px 0 0 #fff;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+    }
+     label{
+      color: #fff;
+    }
+  }
+
+}
+.error_input strong,.text-red {
+  color:red;
+}
+.pop-notify {
+  background:red;
+  border-radius:8px;
+  height:200px;
+  position:fixed;
+  bottom:0px;
+  width:200px;
+  z-index:100;
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(156,114,156,1);
+  -moz-box-shadow: 10px 10px 5px -5px rgba(156,114,156,1);
+  box-shadow: 10px 10px 5px -5px rgba(156,114,156,1);
+  color:#fff;
+  padding-left:15px;
+  padding-top:10px;
+  border:solid 5px #fff;
+  display:none;
+  @include media-breakpoint-down(xs) {
+    right:20px;
+  }
+  button {
+    color:#fff;
+    position:relative;
+    left:120px;
+    top:-40px;
+  }
+}
+
+
+/*-----admin section------*/
+.user-filter {
+  margin-top:-30px;
+  li {
+    display:inline;
+    list-style-type:none;
+    margin-right:30px;
+  }
+}
+.admin-user-filters {
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-left:40px;
+  form{
+    width: 100%;
+  }
+}
+.user-panel {
+  padding-top:20px;
+  padding-bottom:30px;
+  border:solid 1px #ccc;
+  //padding-left:30px;
+  margin-bottom:20px;
+  .user-details {
+   padding-left:30px;
+  }
+  .user-items {
+     @include media-breakpoint-down(xs) {
+      margin-bottom:20px;
+     }
+  }
+  .person-name {
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:20px;
+  }
+  .user-name {
+    font-size:16px;
+  }
+  .email-address {
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:10px;
+  }
+  .ref {
+     margin-left:20px;
+  }
+  .darker {
+    font-weight:bold;
+    display:block;
+  }
+  .btn-group{
+    margin-left:5px;
+  }
+  .approve-button {
+    width:100%;
+  }
+  .export-button {
+    width:100%;
+  }
+  .approval-notice {
+    padding-top:20px;
+    padding-left:20px;
+    padding-bottom:20px;
+    background:#eee;
+    font-size:14px;
+    margin-top:20px;
+    margin-bottom:-30px;
+    border-top:solid 1px #b8b8b8;
+    border-bottom:solid 1px #b8b8b8;
+    width:100%;
+  }
+}
+.users-table {
+  font-size:16px;
+  .person-name {
+  }
+  .user-type {
+   font-size:16px;
+  }
+  .user-type-value {
+    font-weight:bold;
+  }
+  .email {
+    font-size:16px;
+    a  {
+      color:#007bff;
+    }
+  }
+  .rating-value {
+    font-weight:bold;
+  }
+}
+/*----faq----*/
+.faq-container {
+  margin-top:110px;
+  margin-bottom:30px;
+}
+.no-padding {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+
+
+.table.auction{
+  thead{
+    th{
+      font-size: 12px;
+      color: #686868;
+      border-bottom: none;
+    }
+  }
+  tbody{
+    border-radius: 10px;
+    tr {
+      background-color: #f7f7f7;
+      &:first-child{
+        border-radius: 10px 10px 0px 0px;
+        td{
+          &:first-child{
+            border-radius: 10px 0px 0px 0px;
+          }
+          &:last-child{
+            border-radius: 0px 10px 0px 0px;
+          }
+        }
+      }
+      &:last-child{
+        border-radius: 0px 0px 10px 10px;
+        td{
+          &:first-child{
+            border-radius: 0px 0px 0px 10px;
+          }
+          &:last-child{
+            border-radius: 0px 0px 10px 0px;
+          }
+        }
+      }
+      td{
+        border-color: white;
+        font-size: 16px;
+        &:first-child{
+          background-color: $primary-color;
+          color: white;
+          width: 25px;
+          text-align: center;
+        }
+
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+
+    border: 0;
+
+    caption {
+      font-size: 1.3em;
+    }
+
+    thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      display: none;
+    }
+    tbody{
+      tr {
+        display: block;
+        margin-bottom: .625em;
+        border-radius: 10px 10px 10px 10px;
+
+        td{
+          width: 100%;
+          display: block;
+          text-align: right;
+          min-height: 55px;
+          &:first-child{
+            background-color: $primary-color;
+            color: white;
+            text-align: right;
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+          }
+          &:last-child{
+            border-radius: 0px 0px 10px 10px;
+          }
+          &:before {
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+        &:first-child{
+          td{
+            &:first-child{
+              border-radius: 10px 10px 0px 0px;
+              // border-radius: 0px 0px 0px 0px;
+            }
+            &:last-child{
+              border-radius: 0px 0px 10px 10px;
+            }
+          }
+        }
+        &:last-child{
+          td{
+            &:first-child{
+              border-radius:10px 10px 0px 0px ;
+              // border-radius: 0px 0px 0px 0px;
+            }
+            &:last-child{
+              border-radius: 0px 0px 10px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+Flatpicker adds reaonly attr which makes background grey
+changing back to white
+ */
+input.form-control.flatpickr{
+  background-color: #fff;
+}
+
+
+.experianrating__color{
+  float:right;
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  &.excellent{
+    background: green;
+  }
+  &.good{
+    background: lightgreen;
+  }
+  &.fair{
+    background: orange;
+  }
+  &.poor{
+    background: darkred;
+  }
+  &.very-poor{
+    background: red;
+  }
+}
+
+strong.has-error{
+  color:red;
+}
+
+.special-date-css{
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+body.sidebarmenu__open{
+  position: fixed;
+}
+
+.btn.btn-darkred{
+  background: #ff4444;
+  &:hover{
+    color:white;
+  }
+}
+a.no-decoration{
+  text-decoration: none;
+  color: initial;
+}
+
+.auctionSummary{
+  div{
+    margin-bottom: 20px;
+  }
+}
+
+.form-group{
+  @include media-breakpoint-down(sm) {
+    width:100%;
+  }
+}

@@ -1,0 +1,280 @@
+.sidebar{
+	background-color: #f7f7f7;
+	.sidebar__close__btn{
+		display: none;
+		color: #ffffffa6;
+		&:hover{
+			color:#fff;
+			transform: rotate(180deg) scale(1.4);
+		}
+		transition: transform .5s ease;
+	}
+	@include media-breakpoint-down(sm) {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 9999;
+			top: 0;
+			left: 0;
+			background-color: rgb(0,0,0);
+			background-color: rgba(0,0,0, 0.95);
+			overflow-x: hidden;
+			transition: 0.5s;
+		.sidebar__close__btn{
+			display: block;
+			font-size: 4em;
+			right: 35px;
+			position: absolute;
+		}
+	}
+
+	.registration-menu {
+		@include media-breakpoint-down(sm) {
+          position: relative;
+          top: 5%;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+			.registration-padding-fix {
+				&>ul{
+					display: block;
+					&>li{
+						min-width: 100px;
+						&.active-heading{
+							.active-link{
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+	 .registration-padding-fix {
+	 	padding:0px;
+		ul {
+			margin:0px;
+			padding:0px;
+			li {
+				display:inline-block;
+				list-style-type:none;
+				padding: 0px;
+				a {
+					width: 100%;
+					height: 100%;
+					display: inline-block;
+					padding: 20px 30px;
+					text-align: left;
+					vertical-align: middle;
+					color: #373737;
+					img {
+						margin-right:10px;
+						margin-top:-5px;
+					}
+					i{
+						font-size: 20px;
+						margin-right:10px;
+				    vertical-align: text-bottom;
+					}
+					&:before{
+						content: '';
+						width: 0px;
+						border-top: 20px solid transparent;
+						border-bottom: 20px solid transparent;
+						border-left: 20px solid black;
+						position: absolute;
+						left: -20px;
+						top: calc(50% - 20px);
+				    transition: left 0.3s ease-in-out;
+						display: block;
+					}
+				}
+				&.active-heading, &:hover {
+					a{
+						&:before{
+							content: '';
+							left: 0px;
+						}
+					}
+				}
+				&.marketplace-color{
+					background-image: linear-gradient(53deg, #4a29b9, #8e2b99 58%, #ed2d6d);
+					background-size: 100% 100%;
+					-webkit-animation: gradientmoving 5s ease infinite;
+					-moz-animation: gradientmoving 5s ease infinite;
+					-o-animation: gradientmoving 5s ease infinite;
+					animation: gradientmoving 5s ease infinite;
+					margin-bottom: 20px;
+					a{
+						color:#fff;
+						padding: 50px 30px;
+						&:before{
+							border-left: 20px solid white;
+						}
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-down(lg) {
+			margin-top: 0px;
+			ul li{
+				a{
+					text-align: center;
+					padding: 45px 15px;
+					i{
+						margin-right: 0px;
+					}
+					span{
+						display: block;
+						font-size: 14px;
+					}
+				}
+				&.marketplace-color{
+					a{
+						padding: 45px 15px;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-down(md) {
+			ul li{
+				a:before{
+					display: none;
+					border-top: 15px solid transparent;
+					border-bottom: 15px solid black;
+					border-left: 15px solid transparent;
+					border-right: 15px solid transparent;
+					position: absolute;
+					left: calc(50% - 15px);
+					top: auto;
+					bottom: 0px;
+				}
+				&.marketplace-color{
+					background-image: linear-gradient(53deg, #4a29b9, #8e2b99 58%, #ed2d6d);
+					background-size: 100% 100%;
+					-webkit-animation: gradientmoving 5s ease infinite;
+					-moz-animation: gradientmoving 5s ease infinite;
+					-o-animation: gradientmoving 5s ease infinite;
+					animation: gradientmoving 5s ease infinite;
+					margin-bottom: 0px;
+					a{
+						color:#fff;
+						padding: 45px 15px;
+						&:before{
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid white;
+							border-left: 15px solid transparent;
+							border-right: 15px solid transparent;
+						}
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-top: 0px;
+			ul li{
+				a{
+					text-align: center;
+					padding: 20px 0px;
+					&:before{
+						border-top: 15px solid transparent;
+						border-bottom: 15px solid black;
+						border-left: 15px solid transparent;
+						border-right: 15px solid transparent;
+						display: none;
+						position: absolute;
+						left: calc(50% - 15px);
+						top: auto;
+						bottom: 0px;
+					}
+					i{
+						margin-right: 10px;
+					}
+					span{
+						display: inline-block;
+						font-size: 16px;
+						max-width:100px;
+						margin-left: auto;
+						margin-right: auto;
+					}
+					color: #ffffffa6;
+					&:hover{
+						color: #fff;
+					}
+				}
+				&.marketplace-color{
+					background-image: linear-gradient(53deg, #4a29b9, #8e2b99 58%, #ed2d6d);
+					background-size: 100% 100%;
+					-webkit-animation: gradientmoving 5s ease infinite;
+					-moz-animation: gradientmoving 5s ease infinite;
+					-o-animation: gradientmoving 5s ease infinite;
+					animation: gradientmoving 5s ease infinite;
+					margin-bottom: 0px;
+					a{
+						color:#fff;
+						padding: 20px 0px;
+						&:before{
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid white;
+							border-left: 15px solid transparent;
+							border-right: 15px solid transparent;
+						}
+					}
+				}
+			}
+		}
+	 }
+		.reg-form {
+			background:#fff;
+			margin-top:200px;
+			input[type=checkbox] {
+				height:20px;
+				@include media-breakpoint-down(sm) {
+					float:left;
+				}
+			}
+			h3 {
+				font-weight:normal;
+				font-size:21px;
+				margin-top:10px;
+				 @include media-breakpoint-down(sm) {
+					margin-top:10px;
+					margin-bottom:10px;
+				}
+			}
+			select {
+				width:100%;
+			}
+		}
+	}
+}
+
+
+// background: linear-gradient(231deg, #d000ff, #5500ff);
+// background-size: 400% 400%;
+
+
+
+@-webkit-keyframes gradientmoving {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@-moz-keyframes gradientmoving {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@-o-keyframes gradientmoving {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@keyframes gradientmoving {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}

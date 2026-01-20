@@ -1,0 +1,409 @@
+.card {
+  background-color: #f7f7f7;
+  &.form {
+    // max-width: 900px;
+    background-color: white;
+    .card-header {
+      background-color: white;
+      border-radius: 0.25rem;
+      border-top: 5px solid $primary-color;
+      padding: 10px 4.25rem;
+      @include media-breakpoint-down(sm) {
+        padding: 1rem;
+      }
+      h3 {
+        margin: 15px 0px;
+        font-size: 20px;
+      }
+    }
+    .card-body {
+      padding: 1.5rem 4.25rem;
+      @include media-breakpoint-down(sm) {
+        padding: 1rem;
+      }
+      p.limit {
+        margin-bottom: 1.5rem;
+      }
+      input, select, textarea {
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+      .btn {
+        input, select, textarea {
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+      }
+      .custom-collapse {
+        a {
+          color: $black;
+        }
+      }
+
+      #div_po_document {
+        label {
+          margin-bottom: 0px;
+        }
+        input {
+          height: auto;
+        }
+      }
+      input.flatpickr.flatpickr-input {
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        &.active {
+          border: 1px solid #8e8e8e;
+        }
+      }
+      input.form-control.normal {
+        display: block;
+        width: auto;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        float: right;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        &:hover {
+          cursor: default;
+        }
+        &:focus {
+          color: #495057;
+          background-color: #fff;
+          border-color: #ced4da;
+          outline: 0;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+      }
+    }
+    .card-footer {
+      padding: 1.5rem 4.25rem;
+      background-color: white;
+      border-top: none;
+    }
+  }
+}
+
+// long card
+.comman-card {
+  // max-width: 900px;
+  &.small { /*used on market*/
+    max-width: 350px;
+    margin-right: 0px;
+    margin-left: auto;
+    @include media-breakpoint-down(sm) {
+      max-width: none;
+      margin-right: auto;
+    }
+  }
+  &.admin {
+    p.value {
+      strong {
+        font-size: 20px;
+        color: $black;
+        display: block;
+      }
+    }
+    i.shield {
+      background-image: url(../assets/img/shield-icon.png);
+      background-size: cover;
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      float: left;
+      margin-left: -5px;
+      &:before {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+      &.i {
+        &:after {
+          content: "i";
+        }
+      }
+      &.s {
+        &:after {
+          content: "s";
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+    }
+    .disable {
+      opacity: 0.6;
+      cursor: default;
+      * {
+        cursor: default;
+      }
+    }
+    .button-group {
+      &-text {
+        p {
+          margin-right: 8px;
+          display: inline;
+          float: left;
+        }
+        span {
+          margin: 0px;
+          display: inline;
+          float: left;
+          button {
+            &:first-child {
+              margin-right: -2px;
+            }
+            display: inline;
+            float: left;
+            margin: 0.375rem 0px;
+          }
+        }
+      }
+      button {
+        &:first-child {
+          margin-right: -2px;
+        }
+        margin: 0px;
+        display: inline;
+        float: left;
+      }
+    }
+  }
+  a {
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+  }
+  &__header {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    span {
+      font-weight: bold;
+      font-size: 12px;
+    }
+    .left {
+      text-align: left;
+    }
+    .right {
+      text-align: right;
+    }
+  }
+  &__content {
+    .card-body {
+      .btn-group {
+        margin-bottom: -2px;
+        a:first-child {
+
+          border-right: none !important;
+        }
+      }
+
+      padding: 0px 15px;
+      .left {
+        h4.title {
+          font-size: 22px;
+        }
+        p {
+          line-height: 25px;
+          font-size: 16px;
+          &.f-14 {
+            font-size: 14px;
+          }
+        }
+        button {
+          color: #333;
+          border: 1px solid #333;
+          background: white;
+          font-size: 11px;
+          padding: 5px 13px;
+        }
+      }
+      .right {
+        .circle-progress {
+          p {
+            font-size: 12px;
+            color: #686868;
+            text-align: center;
+            strong {
+              color: #373737;
+              font-weight: bold;
+            }
+          }
+          &__area {
+            position: relative;
+            svg {
+              margin: 0 auto;
+              width: 100%;
+              path {
+                will-change: auto;
+                stroke-width: 20px;
+                stroke-miterlimit: round;
+                transition: stroke-dashoffset 1950ms ease-in-out;
+              }
+            }
+            p {
+              &.value {
+                position: absolute;
+                color: #373737;
+                font-weight: bold;
+                font-size: 30px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                letter-spacing: -1px;
+                vertical-align: middle;
+                span {
+                  font-size: 24px;
+                  margin-left: -5px;
+                  display: inline;
+                }
+              }
+              &.amount {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                width: 100%;
+                font-size: 12px;
+                color: #686868;
+                text-align: center;
+              }
+            }
+          }
+        }
+        .bar-progress {
+          .progress {
+            border-radius: 0.25rem 0.25rem;
+            background-color: $primary-color;
+            height: 1.7rem;
+            .progress-bar {
+              border-radius: 0.25rem 0.25rem;
+              background-color: $danger-color;
+            }
+          }
+          p {
+            font-size: 12px;
+            color: #686868;
+            text-align: center;
+            strong {
+              color: #373737;
+              font-weight: bold;
+            }
+          }
+        }
+        .half-circle {
+          &__area {
+            position: relative;
+            text-align: center;
+            svg {
+              will-change: auto;
+              stroke-width: 20px;
+              stroke-miterlimit: round;
+              transition: stroke-dashoffset 1950ms ease-in-out;
+            }
+            p {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 80%;
+              left: 0px;
+              right: 0px;
+              margin: auto;
+              text-align: center;
+              font-size: 28px;
+              color: $black;
+              font-weight: bold;
+              span {
+                color: $black;
+                font-size: 20px;
+                display: inline;
+              }
+            }
+          }
+        }
+        p {
+          &.title {
+            font-size: 12px;
+            color: #686868;
+            text-align: center;
+            .value {
+              font-size: 30px;
+              color: #333;
+              display: block;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .bottom {
+        h4.title {
+          font-size: 22px;
+        }
+        p {
+          line-height: 25px;
+          font-size: 16px;
+          &.f-14 {
+            font-size: 14px;
+          }
+        }
+      }
+      p, h4 {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+p.value {
+  &.small {
+    span {
+      font-size: 20px;
+    }
+  }
+  &.inline {
+    margin-top: -5px;
+    strong {
+      color: $black;
+    }
+  }
+  font-size: 12px;
+  color: #686868;
+  text-align: center;
+  text-transform: uppercase;
+  span {
+    color: #373737;
+    font-weight: 600;
+    font-size: 21px;
+    display: block;
+    &.auction__details__repayment {
+      font-size: 21px;
+    }
+  }
+}

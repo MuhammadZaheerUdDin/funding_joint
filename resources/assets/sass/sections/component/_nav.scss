@@ -1,0 +1,30 @@
+
+.nav.filter{
+  .nav-item, li{
+    .nav-link, a, button{
+      font-size: 16px;
+      color: black;
+      opacity: 0.6;
+      padding-left: 10px;
+      padding-right: 10px;
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    &:first-child{
+      .nav-link, a, button{
+        padding-left: 0px;
+      }
+    }
+  }
+  &.right{
+    .nav-item, li{
+      &:last-child{
+        .nav-link, a, button{
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+}

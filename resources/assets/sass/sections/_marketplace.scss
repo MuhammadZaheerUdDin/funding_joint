@@ -1,0 +1,259 @@
+.marketplace{
+  @media screen and (max-width: 600px) {
+    .autions-items{
+      text-align: center;
+    }
+  }
+  .nav{
+    .nav-link{
+      font-size: 16px;
+      color: black;
+      opacity: 0.6;
+      &:first-child{
+        padding-left: 0px;
+      }
+      &.active{
+        opacity: 1;
+      }
+    }
+  }
+  &__item{
+    color: #373737;
+    //min-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    //max-width: 350px;
+    display: inline-block;
+        text-align: left;
+    &:hover{
+      cursor: pointer;
+      color: #373737;
+    }
+
+    &__auction{
+      &__card__header{
+        font-size: 12px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        &__left{
+          font-weight: bold;
+        }
+        &__right{
+          font-weight: bold;
+          text-align: right;
+        }
+      }
+      .card{
+        background-color: #f7f7f7;
+        .card-body{
+          padding: 0px;
+        }
+      }
+      &__content{
+        h4{
+          margin-top: 20px;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 16px;
+          margin-bottom: 0.7rem;
+          position: relative;
+        }
+        .toggleFundsRemainingDisplayType{
+          i{
+            padding: 5px 10px;
+            border: 1px solid #373737;
+            font-size: 12px;
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover i{
+            color: white;
+            background-color: $primary-color;
+
+          }
+        }
+        &__bottom{
+          border-top: 1px solid white;
+        }
+      }
+      &__progress{
+        position: relative;
+        color: white;
+        border-radius: 0.25rem 0.25rem 0rem 0rem;
+        overflow: visible;
+        height: 0.7rem;
+        background-color: #b1a4de;
+        &__bar{
+          span>span{
+            right: -50%; left: auto;
+          }
+          %progressSmall {  left: -50%; right: auto;  }
+          %progressElse { right: -50%; left: auto; }
+          @for $i from 0 through 100 {
+            &[progress="#{$i}"] {
+              span>span{
+                @if $i < 15 { @extend %progressSmall; }
+                @else { @extend %progressElse; }
+              }
+            }
+          }
+          background-color: $primary-color;
+          border-radius: 0.25rem 0.25rem 0rem 0rem;
+          position: relative;
+          &__total__amount{
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            top: -8px;
+            span{
+              display: inline;
+              position: absolute;
+              color: #373737;
+              padding: 3px 5px;
+               height: 25px;
+              vertical-align: middle;
+              background-color: white;
+              border: 1px solid #37373769;
+
+            }
+          }
+        }
+        &__funding__required{
+        }
+      }
+
+      .experianrating__color{
+        float:right;
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        &.excellent{
+          background: green;
+        }
+        &.good{
+          background: lightgreen;
+        }
+        &.fair{
+          background: orange;
+        }
+        &.poor{
+          background: darkred;
+        }
+        &.very-poor{
+          background: red;
+        }
+      }
+
+
+      &__square{
+        padding:10px;
+        text-align: center;
+        &__title {
+          font-size: 16px;
+        }
+
+        &__count{
+          font-size: 22px;
+          font-weight:600;
+        }
+      }
+    }
+  }
+  .border{
+    &-left{
+      border-left: solid white 2px;
+
+    }
+    &-top{
+      border-top: solid white 2px;
+    }
+    &-bottom{
+      border-bottom: solid white 2px;
+    }
+  }
+}
+
+.investment-details  {
+  // margin:25px 0px;
+}
+
+.seller-type {
+    font-weight:bold;
+    font-size:18px;
+  }
+
+.seller-name {
+  font-size:24px;
+  font-weight:bold;
+}
+
+.seller-details {
+  font-weight:bold;
+  span{
+    font-weight:normal;
+  }
+}
+.auction-number {
+    h5 {
+      font-weight:bold;
+    }
+    span {
+      display:inline-block;
+      font-weight:normal;
+    }
+}
+
+.enter-bid {
+  //width:90%;
+  margin-top:25px;
+  margin-bottom:25px;
+  @media screen and (max-width: 600px) {
+    width:100%;
+  }
+
+  h4 {
+    padding-top:25px;
+    font-size:21px;
+    font-weight:bold;
+  }
+
+  p {
+    font-size:18px;
+  }
+
+  .enter-bid-details {
+    font-size:16px;
+  }
+
+  .results-title {
+    font-size:18px;
+    margin:10px 0 25px 0;
+    @media screen and (max-width: 600px) {
+      margin-bottom:25px;
+    }
+  }
+
+  .row-spacer {
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+  .row-headings {
+    text-align:center;
+    font-weight:bold;
+  }
+
+  .row-values {
+    text-align:center;
+    border-radius:5px;
+    padding: 10px 0px;
+  }
+  .auction__calculations{
+    .col{
+      @media screen and (max-width: 767px) {
+        border-bottom:1px solid #4727b0;;
+      }
+    }
+  }
+}
